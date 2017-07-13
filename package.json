@@ -1,0 +1,27 @@
+{
+  "name": "depwatcher",
+  "version": "0.0.1",
+  "description": "Microservice that generates badge with information about dependencies' status of chosen package.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha"
+  },
+  "author": "Dmitriy K",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "express-promise-router": "^2.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "chai-http": "^3.0.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.2",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.7.0",
+    "mocha": "^3.4.2"
+  }
+}

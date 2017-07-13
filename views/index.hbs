@@ -1,0 +1,31 @@
+<div class="row">
+    {{#if error}}
+        <div class="col-sm-12">
+            <div class="alert alert-danger" role="alert">
+                {{ error }}
+            </div>
+        </div>
+    {{/if}}
+    <div class="col-sm-6">
+        <h3>Popular packeges:</h3>
+        <ul>
+            <li><a href="/package/Unitech/pm2">pm2</a> (<a href="https://github.com/Unitech/pm2">repo</a>)</li>
+            <li><a href="/package/tonistiigi/mega">mega sdk</a> (<a href="https://github.com/tonistiigi/mega">repo</a>)</li>
+            <li><a href="/package/globocom/megadraft">percy</a> (<a href="https://github.com/globocom/megadraft">repo</a>)</li>
+        </ul>
+    </div>
+    <div class="col-sm-6">
+        <h3>GitHub repo</h3>
+        <form method="get" action="/search/">
+            <label for="basic-url">Enter your github repo</label>
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon3">https://github.com/</span>
+                <input type="text" class="form-control" name="form" placeholder="facebook/react" id="basic-url" aria-describedby="basic-addon3">
+            </div>
+            <p>
+                <!--<input type="submit" value="analyse" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+            </p>
+        </form>
+
+    </div>
+</div>
