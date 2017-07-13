@@ -13,7 +13,7 @@ ___
 
 ### Live demo
 
-    Check it out on heroku [depwatcher.herokuapp.com](https://depwatcher.herokuapp.com/)
+    Check it out on heroku https://depwatcher.herokuapp.com
 
 ### Local app
 
