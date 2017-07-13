@@ -67,7 +67,7 @@ router.get('/package/:user/:name', (req, res, next) => {
         })
         .then(() => {
           // console.log(`current: ${badge.up} - ${badge.maj} - ${badge.min}`)
-          svgLink = `http://localhost:3000/badge/${badge.up}/${badge.maj}/${badge.min}.svg`
+          svgLink = `/badge/${badge.up}/${badge.maj}/${badge.min}.svg`
           res.render('package', { name: packageName, badge: svgLink })
         })
         .catch((e) => {
@@ -81,7 +81,7 @@ router.get('/package/:user/:name', (req, res, next) => {
     })
 })
 
-router.get('/:search', (req, res, next) => {
+router.get('/search/', (req, res, next) => {
   const reqs = req.query.form.split('/')
   // console.log('redirect to package page')
   res.redirect(`/package/${reqs[0]}/${reqs[1]}`)
